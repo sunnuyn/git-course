@@ -1,0 +1,12 @@
+1. 
+- git init: khởi tạo git
+- git add <file_name>: thêm file vào vùng staging để chuẩn bị commit 
+- git add commit -m "message": commit file
+
+2. 
+a. Tạo 3 file > vùng Working directory
+b. khởi tạo Git > vùng Working directory
+c. chưa có file nào được add trước đó > vùng Working directory
+d. đưa file 1 vào > vùng Staging
+e. đưa file 1 vào > vùng Repository 
+f. không có "file" > không chạy được
