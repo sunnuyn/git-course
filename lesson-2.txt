@@ -1,12 +1,38 @@
 1. 
 - git init: khởi tạo git
 - git add <file_name>: thêm file vào vùng staging để chuẩn bị commit 
-- git add commit -m "message": commit file
+- git add commit -m "message": dùng để tạo ra 1 phiên bản dựa vào các file đã được thêm ở vùng staging vào Repository với thông điệp là "message"
 
 2. 
-a. Tạo 3 file > vùng Working directory
-b. khởi tạo Git > vùng Working directory
-c. chưa có file nào được add trước đó > vùng Working directory
-d. đưa file 1 vào > vùng Staging
-e. đưa file 1 vào > vùng Repository 
-f. không có "file" > không chạy được
+a. Tạo 3 file 
+    - Local: file1, file2, file3
+    - Working directory:
+    - Staging:
+    - Repository:
+
+b. git init
+    - Local:
+    - Working directory: file1, file2, file3
+    - Staging:
+    - Repository:
+ 
+c. git commit -m "init project"
+    - Local:
+    - Working directory: file1, file2, file3
+    - Staging:
+    - Repository:
+d. git add file1
+    - Local:
+    - Working directory: file2, file3
+    - Staging: file1
+    - Repository:
+e. git commit -m "add file1"
+    - Local:
+    - Working directory: file2, file3
+    - Staging: 
+    - Repository: file1
+f. git add file
+    - Local:  
+    - Working directory: file2, file3
+    - Staging: 
+    - Repository: file1
