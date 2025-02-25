@@ -1,0 +1,79 @@
+1. 
+git commit --amend: Dùng để sửa đổi commit 
+git commit --amend -m "message": Dùng để thay đổi message của commit
+git restore --staged <file>: Đưa file từ vùng Staging về vùng Working directory
+git reset HEAD~1: Đưa commit gần nhất từ vùng Repository về vùng Working directory
+
+2. 
+a. Tạo 3 file: file1, file2, file3
+    - Local: file1, file2, file3
+    - Working directory: 
+    - Staging:
+    - Repository:
+b. git init:
+    - Local: 
+    - Working directory: file1, file2, file3
+    - Staging:
+    - Repository:
+c. git commit -m "git project"
+    - Local: 
+    - Working directory: file1, file2, file3
+    - Staging:
+    - Repository:
+d. git add file1
+    - Local: 
+    - Working directory: file2, file3
+    - Staging: file1
+    - Repository:
+e. git commit -m "add file" 
+    - Local: 
+    - Working directory: file2, file3
+    - Staging: 
+    - Repository: file1
+f. git add .
+    - Local: 
+    - Working directory: 
+    - Staging: file2, file3
+    - Repository: file1
+g. git restore --staged file2
+    - Local: 
+    - Working directory: file2
+    - Staging: file3
+    - Repository: file1
+h. git commit -m "add all files"
+    - Local: 
+    - Working directory: file2
+    - Staging: 
+    - Repository: file1, file3
+i. git reset HEAD~1
+    - Local: 
+    - Working directory: file2, file3
+    - Staging: 
+    - Repository: file1
+
+3. 
+a. git init:
+    - Local: 
+    - Working directory: 
+    - Staging:
+    - Repository:
+b. Tạo file file1.txt, file2.txt, oops/file3.txt
+    - Local: file1.txt, file2.txt, oops/file3.txt
+    - Working directory: 
+    - Staging:
+    - Repository:
+c. Thêm file .gitignore, thêm vào 2 dòng: file1.txt, oops/
+    - Local: file1.txt, file2.txt, oops/file3.txt, .gitignore
+    - Working directory: 
+    - Staging:
+    - Repository:
+d. git add .
+    - Local: 
+    - Working directory: file1, oops/file3.txt
+    - Staging: file2.txt, .gitignore
+    - Repository:
+e. git commit -m "init project"
+    - Local: 
+    - Working directory: file1, oops/file3.txt
+    - Staging:  
+    - Repository: file2.txt, .gitignore
